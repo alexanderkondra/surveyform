@@ -16,7 +16,6 @@
     <div id="survey">
       <form>
         <div class="q1">
-
           <p>What is your favorite food?</p>
           <select class="form-control" id="food">
             <option>Pizza</option>
@@ -24,62 +23,65 @@
             <option>Sushi</option>
             <option>Starbursts</option>
           </select>
-
         </div>
       </div>
 
       <div class="q2">
-        <p>Favorite color?</p>
-        <div class="radio">
+        <p>choose a sport</p>
+        <div id="sport">
           <label>
-            <input type="radio" name="color" value="blue" checked>
-            Blue
+            <input type="radio" name="sport" value="MMA" checked>
+            MMA
           </label>
         </div>
-
         <div class="radio">
           <label>
-            <input type="radio" name="color" value="green">
-            Green
+            <input type="radio" name="sport" value="Swimming">
+            Swimming
           </label>
         </div>
-
         <div class="radio">
           <label>
-            <input type="radio" name="color" value="orange">
-            orange
+            <input type="radio" name="sport" value="running">
+            running
           </label>
         </div>
       </div>
 
-      <div class="colorpick">
-        <p>Pick a color!</p>
 
+      <div class="colorHue">
+        <p>Pick a color!</p>
         <div class="colorPicker">
           <div class="form-group">
             <label for="color">What is your favorite color?</label>
-            <input id="color" class="form-control" type="color">
+            <input id="colorWheel" class="form-control" type="color">
           </div>
         </div>
-
       </div>
+
+
       <div class="dob">
         <div class="form-group">
           <label for="born">Date of birth:</label>
           <input id="born" class="form-control" type="date">
         </div>
       </div>
+
+
         <div class="form-group">
-          <label for="person1">A name</label>
-          <input id="person1" class="form-control" type="text">
+          <label for="name">A name</label>
+          <input id="name" class="form-control" type="text">
         </div>
         <button type="submit" class="btn">results</button>
       </form>
     </div>
     <div id="results">
-      <p>these are your results</p>
+      <h1>These are your results</h1>
       <p>you enjoy: <span class="food"></span></p>
-      <p>your name is: <span class="person1"></span></p>
+      <p>your favorite sport is: <span class="sport"></span></p>
+      <p>your name is: <span class="name"></span></p>
+      <p>your color is: <span class=".color"></span></p>
+      <p>DOB: <span class=".DOB"></span></p>
     </div>
   </body>
 </html>
