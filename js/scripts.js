@@ -8,6 +8,7 @@ $(document).ready(function() {
       $(".sport").text(sport);
 
       var color = $("#colorWheel").val();
+      console.log(color);
       $(".color").text(color);
 
       var dob = $("#born").val();
