@@ -12,17 +12,20 @@
 
   <div class="container">
 
-    <form>
 
-      <div class="q1">
-      <p>What is your favorite food?</p>
-      <select class="form-control" id="food">
-        <option>Pizza</option>
-        <option>Pasta</option>
-        <option>Sushi</option>
-        <option>Starbursts</option>
-      </select>
+    <div id="survey">
+      <form>
+        <div class="q1">
 
+          <p>What is your favorite food?</p>
+          <select class="form-control" id="food">
+            <option>Pizza</option>
+            <option>Pasta</option>
+            <option>Sushi</option>
+            <option>Starbursts</option>
+          </select>
+
+        </div>
       </div>
 
       <div class="q2">
@@ -70,7 +73,13 @@
           <label for="person1">A name</label>
           <input id="person1" class="form-control" type="text">
         </div>
+        <button type="submit" class="btn">results</button>
       </form>
+    </div>
+    <div id="results">
+      <p>these are your results</p>
+      <p>you enjoy: <span class="food"></span></p>
+      <p>your name is: <span class="person1"></span></p>
     </div>
   </body>
 </html>
